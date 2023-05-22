@@ -1,0 +1,18 @@
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0;
+    padding: 0 16px; 
+}
+
+.header{
+    background-color: rgb(131, 131, 199);
+}
+
+.section{
+    display: flex;
+    background-color: rgb(214, 214, 85);
+}
