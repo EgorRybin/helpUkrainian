@@ -51,9 +51,17 @@ body {
 
 .container {
     max-width: 1200px;
-    padding: 0 25px;
+    padding: 0 16px;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 780px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+/* header */
 
 .header {
   position: fixed;
@@ -61,11 +69,57 @@ body {
   min-height: 100px;
   background-color: rgb(248, 250, 107);
 }
+
+.static {
+position: static;
+}
+
 .header-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.contacts-header {
+display: none;
+}
+
+@media screen and (min-width: 780px) {
+.contacts-header {
+  display: block;
+}
+}
+
+/* modal */
+
+.backdrop{
+position: fixed;
+top: 0;
+left: 0;
+}
+
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* main */
 
 .main {
 padding-top: 100px;
@@ -78,11 +132,16 @@ padding-top: 100px;
 }
 
 .main-container {
-  display: flex;
   justify-content: space-between;
   min-height: 400px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+@media screen and (min-width: 780px) {
+  .main-container{
+    display: flex;
+  }
 }
 
 .main-section__box {

@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
-    />
+    <title>Help Ukrainian</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -23,11 +19,26 @@
             <li>address</li>
           </ul>
         </div>
+        <button type="button" data-open-btn>menu</button>
+      </div>
+
+      <!-- modal window -->
+
+      <div class="backdrop">
+        <div class="modal is-hidden" data-modal>
+          <ul>
+            <li>tel</li>
+            <li>mail</li>
+            <li>address</li>
+          </ul>
+          <button type="button" data-close-btn>close</button>
+        </div>
       </div>
     </header>
 
-    <main class="main">
+<!-- main -->
 
+    <main class="main">
       <section class="main-section__first">
         <div class="container main-container">
           <div class="main-section__box">
@@ -43,8 +54,8 @@
         </div>
       </section>
 
-      <section class="main-section__second">
-        <div class="container main-container">
+      <section class="main-section">
+        <div class="container main-container__second">
           <img src="./img/flag.jpg" alt="Who we are" width="400px" />
           <div>
             <h1>What are we sending?</h1>
@@ -70,5 +81,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
