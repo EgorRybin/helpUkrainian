@@ -5,38 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Help Ukrainian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
+  
   <body>
     <header class="header">
       <div class="container">
         <div class="header-box">
-          <div>logo</div>
-          <h1>We help Ukrainian</h1>
+          <img class="logo" src="./img/logo.jpg" alt="" />
+          <h1 class="title">We help Ukrainian</h1>
           <ul class="contacts-header">
             <li>tel</li>
             <li>mail</li>
             <li>address</li>
           </ul>
+          <button class="modal-btn" type="button" data-open-btn>
+            <svg width="40" height="40">
+            <use class="mobil-btn__menu" href="./img/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
         </div>
-        <button type="button" data-open-btn>menu</button>
       </div>
 
       <!-- modal window -->
 
       <div class="backdrop">
         <div class="modal is-hidden" data-modal>
-          <ul>
-            <li>tel</li>
-            <li>mail</li>
-            <li>address</li>
-          </ul>
-          <button type="button" data-close-btn>close</button>
+          <div class="container">
+           <h2 class="modal-title">We help Ukrainian</h2>
+           <ul class="contacts">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:is.for.ukraine@gmail.com">
+                 is.for.ukraine@gmail.com
+              </a>
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="https://goo.gl/maps/Scz8vN65ShiEEwf39" target="_blank"
+                rel="noopener noreferrer">
+                  Our address:
+                  <br>
+                  Room 4, EDI Center, 11A2 MASTERTECH BUSINESS PATHLONE ROAD, Longford, Ireland, N39 Y0F4
+                </a>
+              </li>
+              <li class="contacts-item">
+                  We are open:
+                  <br>
+                  Tuesday 12:00 AM - 02:00 PM
+                  Thursday 12:00 AM - 02:00 PM
+              </li>
+           </ul>
+          <button class="modal-btn" type="button" data-close-btn>
+            <svg width="40" height="40">
+            <use class="mobil-btn__close" href="./img/icons.svg#icon-close-black-18dp-2-1"></use>
+            </svg>
+          </button>
+          </div>
+          
         </div>
       </div>
     </header>
 
-<!-- main -->
+    <!-- main -->
 
     <main class="main">
       <section class="main-section__first">
@@ -44,29 +79,47 @@
           <div class="main-section__box">
             <h2>Who we are?</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Obcaecati aspernatur consectetur eum quod sed sapiente animi? Odio
-              recusandae minus quas fugiat, dolor repellat. Cupiditate corrupti
-              optio mollitia quo in enim!
+              WHO WE ARE? We are a Non-Governmental organization «Little Steps
+              for Ukraine» based in Longford, Ireland. Our organization is quite
+              small, however, we do a big job. We are trying to give Ukrainian
+              children an opportunity to smile, to become a little bit happier.
+              We are a group of volunteers who are sending boxes with gifts to
+              children who are living in Ukraine, who are suffering from the
+              invasion, and who don't have a normal childhood because of the
+              War.
             </p>
           </div>
           <img src="./img/flag.jpg" alt="Who we are" width="400px" />
         </div>
       </section>
 
-      <section class="main-section">
-        <div class="container main-container__second">
-          <img src="./img/flag.jpg" alt="Who we are" width="400px" />
-          <div>
+      <section class="main-section__second">
+        <div class="container main-container">
+          <div class="revers">
+            <img src="./img/flag.jpg" alt="Who we are" width="400px" />
+          <div class="WhatAreWeSending-box">
             <h1>What are we sending?</h1>
-            <ul>
-              <li>qweqwe</li>
-              <li>qweqwe</li>
-              <li>qweqwe</li>
-              <li>qweqwe</li>
+            <p>
+              We send presents to Ukrainian children. We send small boxes with
+              useful and joyful things:
+              <ul>
+              <li>toys</li>
+              <li>clothes</li>
+              <li>books</li>
+              <li>accessories</li>
+              <li>pencils, drawing markers, coloring books</li>
+              <li>sweets</li>
             </ul>
+              We send anything that makes kids happy.
+            </p>
+            
+          </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <div class="class="container main-container""></div>
       </section>
     </main>
 
@@ -74,7 +127,7 @@
       <div class="container">
         <div class="footer-box">
           <div>
-            <div>logo</div>
+            <img class="logo" src="./img/logo.jpg" alt="" />
             <p>Longford, H11 J111</p>
           </div>
           <p>social links</p>
