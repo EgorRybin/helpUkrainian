@@ -75,6 +75,8 @@ a {
   --primary-bg-color: rgb(207, 219, 238);
   --secondary-bg-color: rgb(244, 247, 120);
   --primary-text-color: rgb(0, 0, 0);
+  --social-link: rgb(255, 255, 255);
+  --social-link-bg: rgb(39, 92, 179);
 }
 
 .container {
@@ -99,7 +101,7 @@ a {
 }
 
 .logo {
-  width: 136px;
+  width: 105px;
   padding-bottom: 19px;
 }
 
@@ -138,7 +140,6 @@ a {
 
 .contacts-item:not(:last-child) {
 margin-bottom: 16px;
-/* border-bottom: 1px solid black; */
 }
 
 .contacts-link {
@@ -202,56 +203,93 @@ margin-bottom: 16px;
   margin: 16px 0 16px 0;
 }
 
-
-
 /* main */
 
 .main {
-  padding-top: 160px;
+  padding-top: 200px;
 }
 
-.main-section__box {
-  max-width: 400px;
-}
-
-.main-section__first {
-  background-color: var(--primary-bg-color);
-}
-
-.main-section__second {
-  background-color: var(--secondary-bg-color);
-}
-
-.main-container {
-  justify-content: space-between;
-  min-height: 400px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-@media screen and (min-width: 780px) {
-  .main-container {
-    display: flex;
-  }
-}
-
-.revers {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.WhatAreWeSending-box {
+.section-box {
   display: flex;
   flex-direction: column;
 }
+
+.section-title {
+  margin-bottom: 8px;
+}
+
+.section-text {
+  margin-bottom: 8px;
+}
+
+/* about */
+
+.section-about {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: var(--primary-bg-color);
+}
+
+/* What are we sending */
+
+.section-sending {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 8px;
+  background-color: var(--secondary-bg-color);
+}
+
+/* HOW CAN YOU HELP */
+
+.section-help {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  background-color: var(--primary-bg-color);
+}
+
+/* EE GREATLY APPRECIATE YOUR HELP */
+
+.section-we {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 8px;
+  background-color: var(--secondary-bg-color);
+}
+
+/* footer */
 
 .footer {
   background-color: rgb(255, 255, 255);
 }
 
-.footer-box {
+.footer-section {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 100px;
+  justify-content: center;
+  padding: 8px;
 }
+
+.footer-networks__link {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    width: 44px;
+    height: 44px;
+
+    background-color: var(--social-link-bg);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-networks__link:hover,
+.footer-networks__link:focus {
+    background-color: var(--secondary-bg-color);
+}
+
+.footer-networks__svg {
+fill: var(--social-link)
+}
+
